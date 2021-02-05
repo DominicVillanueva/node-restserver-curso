@@ -13,7 +13,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.use(require('./routes/usuario.router'));
+// Configuración de rutas
+app.use(require('./routes/index'));
 
 // Conexión
 mongoose.connect(process.env.URL_DB, {
@@ -28,4 +29,4 @@ mongoose.connect(process.env.URL_DB, {
 
 app.listen(process.env.PORT, () => {
     console.log('Escuchando el puerto 3000');
-})
+});
