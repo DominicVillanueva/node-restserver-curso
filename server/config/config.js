@@ -20,3 +20,8 @@ process.env.JWT_KEY = process.env.JWT_KEY || 'seed-desarrollo';
 // =============
 let urlDB = process.env.NODE_ENV === 'DEV' ? 'mongodb://localhost:27017/cafe' : process.env.MONGODB_URI;
 process.env.URL_DB = urlDB;
+
+// =============
+// Google Cliente ID
+// =============
+process.env.CLIENT_ID = process.env.CLIENT_ID || '795768823100-n9gea2ve8ua1pucgm3qigpn03fvojsg1.apps.googleusercontent.com';
